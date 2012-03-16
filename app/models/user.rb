@@ -1,4 +1,3 @@
 class User < ActiveRecord::Base
-	has_many :users_rols
-	has_many :rols, :trough => :users_rols
+    has_and_belongs_to_many :roles
 end
